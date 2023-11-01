@@ -1,7 +1,7 @@
 from django.urls import path
 
 from . import views
-
+# coversation/urls.py
 app_name = 'conversation'
 
 urlpatterns = [
