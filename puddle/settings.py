@@ -29,7 +29,7 @@ ALLOWED_HOSTS = []
 
 LOGIN_URL = '/login/'
 LOGIN_REDIRECT_URL = '/'
-LOGOUT_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = '/logout/'
 
 
 # Application definition
@@ -83,8 +83,12 @@ WSGI_APPLICATION = 'puddle.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'service_hub_v1',
+        'USER': 'koki',
+        'PASSWORD': 'Maverick@2021',
+        'HOST': 'localhost',
+        'PORT': '3306',
     }
 }
 
