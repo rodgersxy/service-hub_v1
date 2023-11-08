@@ -8,7 +8,7 @@ app_name = 'core'
 
 urlpatterns = [
     path('', views.landing, name='landing'),
-    path('', views.index, name='index'),
+    path('index/', views.index, name='index'),
     path('about/', views.about, name='about'),
     path('pricing/', views.pricing, name='pricing'),
     path('review/', views.review, name='review'),
