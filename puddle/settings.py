@@ -82,6 +82,20 @@ WSGI_APPLICATION = 'puddle.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
+<<<<<<< HEAD
+=======
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'service_hub_v1',
+        'USER': 'koki',
+        'PASSWORD': 'Maverick@2021',
+        'HOST': 'localhost',
+        'PORT': '3306',
+    }
+}
+
+>>>>>>> faf67d9b799d74e1b0c20ce77cdf027e749d4845
 # MySQL database
 
 DATABASES = {
