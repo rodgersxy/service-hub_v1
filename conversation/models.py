@@ -4,6 +4,9 @@ from django.db import models
 from item.models import Item
 
 class Conversation(models.Model):
+    """
+    Represents a conversation between users.
+    """
     item = models.ForeignKey(Item, related_name='conversations', on_delete=models.CASCADE)
     members = models.ManyToManyField(User, related_name='conversations')
     created_at = models.DateTimeField(auto_now_add=True)
@@ -13,6 +16,9 @@ class Conversation(models.Model):
         ordering = ('-modified_at',)
     
 class ConversationMessage(models.Model):
+    """
+    Represents a message within a conversation.
+    """
     conversation = models.ForeignKey(Conversation, related_name='messages', on_delete=models.CASCADE)
     content = models.TextField()
     created_at = models.DateTimeField(auto_now_add=True)
