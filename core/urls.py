@@ -1,3 +1,15 @@
+"""
+URL patterns for the core app.
+
+This module defines the URL patterns for the core app, which is responsible for handling requests related to landing,
+index, about, pricing, review, contact, signup, login, and logout.
+
+The urlpatterns list maps URL patterns to corresponding views and names.
+The views are imported from the .views module, and the LoginView and LogoutView
+classes are imported from the django.contrib.auth.views module.
+The LoginForm is imported from the .forms module.
+"""
+
 from django.contrib.auth import views as auth_views
 from django.urls import path
 
