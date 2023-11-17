@@ -1,9 +1,15 @@
+# conversation/forms.py 
+
 from django import forms
 
 from .models import ConversationMessage
 
 class ConversationMessageForm(forms.ModelForm):
+    """
+    Represents a form for creating or updating a conversation message.
+    """
     class Meta:
+        # Specifies the ConversationMessage model to use for the form
         model = ConversationMessage
         fields = ('content',)
         widgets = {

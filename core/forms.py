@@ -1,8 +1,18 @@
+"""
+This module contains Django forms for user authentication and signup.
+"""
+
 from django import forms
 from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from django.contrib.auth.models import User
 
 class LoginForm(AuthenticationForm):
+    """
+    A form for user login.
+
+    Inherits from the Django AuthenticationForm class.
+    Adds custom widget attributes for 'username' and 'password' fields.
+    """
     username = forms.CharField(widget=forms.TextInput(attrs={
         'placeholder': 'Your username',
         'class': 'w-full py-4 px-6 rounded-xl'
@@ -13,6 +23,13 @@ class LoginForm(AuthenticationForm):
     }))
 
 class SignupForm(UserCreationForm):
+    """
+    A form for user signup.
+
+    Inherits from the Django UserCreationForm class.
+    Defines the form fields for 'username', 'email', 'password1', and 'password2'.
+    Sets the Meta class to specify the User model and fields to include.
+    """
     class Meta:
         model = User
         fields = ('username', 'email', 'password1', 'password2')
