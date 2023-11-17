@@ -9,12 +9,35 @@
 
 # SERVICE HUB
 
+## TABLE OF CONTENTS
+* Introduction
+* Inspirational Story
+* Authors
+* Tech Stack
+* Database Section
+* Acknowledgements
+
+## INTRODUCTION
+* In a world increasingly dominated by digital platforms, the realm of hand-skilled professionals often finds itself overlooked. Enter ServiceHub, a revolutionary web application designed to connect skilled individuals with broadclient network, addressing the void left by platforms favouring soft skills in the digital age.
+
+* ServiceHub aims to brigde the gap between skilled workers and potential clients, ensuring convenience and accesibility for both parties.
+
 ## Authors
 ```
-Benedict  
-Koki  
-Rodgers  
+Benedict - Mastermind behind the backend magic. Delved deep into the complexities of server-side development. His exepertise in database management and server operations was instrumental in bringing the technical backbone of ServiceHub to life.
+
+Koki - A coding virtuoso with an eye for design. Koki played a pivotal role in crafting the user interface and user exeperience of servicehub.
+
+Rodgers - Took role of Project lead. He oversaw the project's development, ensuring smooth collaboration, and diving into the intricacies of backend development.
 ```
+
+
+## TECH STACK
+* Python - The Backend Language
+* Tailwind-Css - The Frontend language
+* MySQL - Relational Database Management System
+* Django - Web Framework
+
 
 ## DATABASE SECTION
 * In the **settings.py** file of the django framework, you'll notice that the default database is *sqlite* which is not fit to use on production level.
@@ -91,3 +114,9 @@ python manage.py migrate
 python manage.py runserver
 ```
 * Visit http://127.0.0.1:8000/ in your browser and verify that your application is working with the MySQL database.
+
+
+## ACKNOWLEDGEMENTS
+* Holberton School
+* ALX Software Engineering(Mentors & Students)
+* Team Members and Reviewers.
